@@ -23,7 +23,9 @@ header {
   color: white;
   text-align: center;
   padding: 15px 0;
-  
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .container {
@@ -31,17 +33,24 @@ header {
   width: 90%;
   max-width: 1024px;
   margin: 20px auto;
-
+  overflow: auto;
 }
 
 .sidebar {
   line-height: 1.5;
   background-color: #f4f4f4;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  float: right;
+  width: 30%;
+  padding: 16px;
+  margin: 10px 0 10px 20px;
 }
 
 .main-article {
   background-color: #e9ecef;
+  overflow: hidden;
+  padding: 16px;
+  margin: 10px 0;
 }
 
 .page-footer {
